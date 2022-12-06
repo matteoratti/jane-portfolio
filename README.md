@@ -11,4 +11,4 @@ Portforlio website demo.
 - React hook form
 
 ## Screenshot
-![alt text](https://jane-esper-portfolio.netlify.app/assets/jane-esper-full-screenshot.png)
+![My Remote Image](https://jane-esper-portfolio.netlify.app/assets/jane-esper-full-screenshot.png)
