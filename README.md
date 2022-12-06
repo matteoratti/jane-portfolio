@@ -9,6 +9,3 @@ Portforlio website demo.
 - Custom Hooks
 - Framer Motion
 - React hook form
-
-## Screenshot
-![My Remote Image](https://jane-esper-portfolio.netlify.app/assets/jane-esper-full-screenshot.png)
