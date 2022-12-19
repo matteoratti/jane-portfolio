@@ -6,19 +6,19 @@ const Contact = () => {
   const {
     register,
     trigger,
-    formState: {errors}
+    formState: { errors },
   } = useForm();
 
   const onSubmit = async (e) => {
     const isValid = await trigger();
 
-    if(!isValid){
+    if (!isValid) {
       e.preventDefault();
     }
-  }
+  };
 
   return (
-    <section id="contact" className="contact py-48">
+    <section id="contact" className="contact py-12 md:py-48">
       {/* HEADINGS */}
       <motion.div
         initial="hidden"
@@ -54,7 +54,11 @@ const Contact = () => {
           }}
           className="basis-1/2 flex justify-center"
         >
-          <img src="../assets/contact-image.jpeg" alt="contact" />
+          <img
+            className="h-[200px] md:h-full"
+            src="../assets/contact-image.jpeg"
+            alt="contact"
+          />
         </motion.div>
 
         <motion.div
@@ -68,24 +72,20 @@ const Contact = () => {
           }}
           className="basis-1/2 mt-10 md:mt-0"
         >
-          <form 
-            action=""
-            target="_blank"
-            onSubmit={onSubmit}
-          >
-            <input 
-              className="w-full bg-blue font-semibold placeholder-opaque-black p-3" 
-              placeholder="NAME" 
+          <form action="" target="_blank" onSubmit={onSubmit}>
+            <input
+              className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
+              placeholder="NAME"
               type="text"
-              {...register("name",{
+              {...register("name", {
                 required: true,
-                maxLength: 100
-              })} 
+                maxLength: 100,
+              })}
             />
             {errors.name && (
               <p className="text-red mt-1">
-                {errors.name.type === 'required' && "This field is required."}
-                {errors.name.type === 'maxLength' && "Length is 100 char."}
+                {errors.name.type === "required" && "This field is required."}
+                {errors.name.type === "maxLength" && "Length is 100 char."}
               </p>
             )}
 
@@ -134,7 +134,7 @@ const Contact = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

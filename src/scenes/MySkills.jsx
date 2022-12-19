@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import LineGradient from "../components/LineGradient";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const MySkills = () => {
   const isAboveLarge = useMediaQuery("(min-width: 1060px)");
 
-  return ( 
+  return (
     <section id="skills" className="pt-10 pb-24">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
@@ -122,9 +122,7 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Imaginative
-              </p>
+              <p className="font-playfair font-semibold text-3xl mt-3">Dream</p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0 z-[-1]" />
           </div>
@@ -137,7 +135,7 @@ const MySkills = () => {
         </motion.div>
       </div>
     </section>
-   )
-}
+  );
+};
 
-export default MySkills
+export default MySkills;

@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 const SocialMediaIcons = () => {
   return (
     <div className="flex justify-center md:justify-start my-10 gap-7">
       <a
-        className="hover:opacity-50 transition duration-500"
+        className="hover:opacity-50 transition duration-500 mr-2 sm:mr-0"
         href="https://www.linkedin.com"
         target="_blank"
         rel="noreferrer"
@@ -12,7 +12,7 @@ const SocialMediaIcons = () => {
         <img alt="linkedin-link" src="../assets/linkedin.png" />
       </a>
       <a
-        className="hover:opacity-50 transition duration-500"
+        className="hover:opacity-50 transition duration-500 mr-2 sm:mr-0"
         href="https://www.twitter.com"
         target="_blank"
         rel="noreferrer"
@@ -20,7 +20,7 @@ const SocialMediaIcons = () => {
         <img alt="twitter-link" src="../assets/twitter.png" />
       </a>
       <a
-        className="hover:opacity-50 transition duration-500"
+        className="hover:opacity-50 transition duration-500 mr-2 sm:mr-0"
         href="https://www.facebook.com"
         target="_blank"
         rel="noreferrer"
@@ -36,7 +36,7 @@ const SocialMediaIcons = () => {
         <img alt="instagram-link" src="../assets/instagram.png" />
       </a>
     </div>
-  )
-}
+  );
+};
 
-export default SocialMediaIcons
+export default SocialMediaIcons;
